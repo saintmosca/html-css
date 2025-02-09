@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>Temos a possibilidade de utilizar a tag &lt;ol&gt; para criar uma lista ordenada.</p>
+    <p>Dentro da tag temos o parâmetro <em>type=""</em> que apontamos como queremos a indicação dos itens.</p>
+    <br>
+    <strong>
+        <ol type="I">
+            <li>Podemos apontar como "I" para indicar números romanos maiúsculos;</li>
+        </ol>
+        <ol type="i">
+            <li>Podemos apontar como "i" para indicar números romanos minúsculos;</li>
+        </ol>
+        <ol type="A">
+            <li>Podemos apontar como "A" para indicar letras maiúsculas;</li>
+        </ol>
+        <ol type="a">
+            <li>Podemos apontar como "a" para indicar letras minúsculas.</li>
+        </ol>
+    </strong>
+    <br>
+    <p>Porém se indicarmos o parâmetro <em>type=""</em>, a nossa lista será enumerada.</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Além do parâmetro <em>type=""</em>, temos o parâmetro <em>start=""</em> que indica em que posição nossa lista irá começar.</p>
+    <strong><em><p>Exemplo 1: &lt;ol start ="5"&gt;</p></em></strong>
+    <ol start="5">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <strong><em><p>Exemplo 2: &lt;ol type="I" start ="50"&gt;</p></em></strong>
+    <ol type="I" start="50">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <strong><em><p>Exemplo 3: &lt;ol type="i" start ="100"&gt;</p></em></strong>
+    <ol type="i" start="100">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <strong><em><p>Exemplo 4: &lt;ol type="A" start ="10"&gt;</p></strong></em>
+    <ol type="A" start="10">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <strong><em><p>Exemplo 5: &lt;ol type="a" start ="17"&gt;</p></em></strong>
+    <ol type="a" start="17">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>
+    Observação importante: No HTML5 não se faz necessário o fechamento da tag &lt;li&gt; (&lt;/li&gt;), por isso tanto faz criar a lista com o fechamento da tag ou não.
+    Porém, por questão de organização do código, usar o mesmo padrão para todo o código.
+    Por exemplo, se eu vou escrever o código fechando a tag &lt;li&gt;, todas as tag &lt;li&gt; deverão ser fechadas (&lt;/li&gt;), caso o contrário, todas as tag &lt;li&gt; deverão ser abertas.
+    </p>
+    <h3>Exemplos bons:</h3>
+    <pre><code><ol>
+&lt;li&gt;Acordar&lt;/li&gt;
+&lt;li&gt;a o João&lt;/li&gt;
+&lt;li&gt;Tomar café&lt;/li&gt;
+&lt;li&gt;Escovar os dentes&lt;/li&gt;
+&lt;li&gt;Ir para a faculdade&lt;/li&gt;
+&lt;li&gt;Almoçar&lt;/li&gt;
+&lt;li&gt;Ir para o trabalho&lt;/li&gt;
+&lt;li&gt;Voltar para casa&lt;/li&gt;
+&lt;li&gt;Jantar&lt;/li&gt;
+&lt;li&gt;Dormir&lt;/li&gt;
+    </pre></code></ol>
+
+    <pre><code><ol>
+&lt;li&gt;Acordar
+&lt;li&gt;a o João
+&lt;li&gt;Tomar café
+&lt;li&gt;Escovar os dentes
+&lt;li&gt;Ir para a faculdade
+&lt;li&gt;Almoçar
+&lt;li&gt;Ir para o trabalho
+&lt;li&gt;Voltar para casa
+&lt;li&gt;Jantar
+&lt;li&gt;Dormir
+    </pre></code></ol>
+
+    <h3>Exemplo ruim:</h3>
+    
+    <pre><code><ol>
+&lt;li&gt;Acordar&lt;/li&gt;
+&lt;li&gt;a o João&lt;/li&gt;
+&lt;li&gt;Tomar café
+&lt;li&gt;Escovar os dentes
+&lt;li&gt;Ir para a faculdade&lt;/li&gt;
+&lt;li&gt;Almoçar&lt;/li&gt;
+&lt;li&gt;Ir para o trabalho&lt;/li&gt;
+&lt;li&gt;Voltar para casa
+&lt;li&gt;Jantar&lt;/li&gt;
+&lt;li&gt;Dormir
+    </pre></code></ol>
+    <h2>Listas não ordenadas</h2>
+    <p>Temos a possibilidade de utilizar a tag &lt;ul&gt; para criar uma lista não ordenada.</p>
+    <p>Dentro da tag temos o parâmetro <em>type=""</em> igual a tag &lt;li&gt;, porém nós utilizamos as opões <em>"disc", "circle"</em> e <em>"square"</em>.</p>
+    <p>Se não alimentarmos o <em>type=""</em> com nenhuma opção, a opção <em>"disc"</em> será adotada como padrão.</p>
+    <strong><em><p>Exemplo 1: &lt;ul&gt;</p></em></strong>
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <strong><em><p>Exemplo 2: &lt;ul type="disc"&gt;</p></em></strong>
+    <ul type="disc">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <strong><em><p>Exemplo 3: &lt;ul type="circle"&gt;</p></em></strong>
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <strong><em><p>Exemplo 4: &lt;ul type="square"&gt;</p></em></strong>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Juntando listas</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Cliper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>  
+        <ol type ="a">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>SNES</li>
+        <ul>
+            <li>Super Mario World</li>
+            <li>Donkey Kong III</li>
+            <li>Chrono Trigger</li>
+            <li>Mortal Kombat III - Ultimate</li>
+        </ul>
+        <li>N64</li>
+        <ul>
+            <li>Super Mario 64</li>
+            <li>007 - Goldeneye</li>
+            <li>Banjo Kazooie</li>
+            <li>TLOZ - Ocarina of Time</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Vagrant Story</li>
+            <li>Crash Banditcoot III - Warped</li>
+            <li>Tony Hawk Pro Skater 3</li>
+            <li>Castlevania - Symphony of the Night</li>
+        </ul>
+        <li>PC</li>
+        <ul>
+            <li>Hollow Knight</li>
+            <li>Vampire Survivors</li>
+            <li>Ragnarok</li>
+            <li>Lunia Z</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2>
+    <p>Temos a possibilidade de utilizar a tag &lt;dl&gt; para criar uma lista de definição.</p>
+    <p>Dentro da tag &lt;dl&gt;, usamos a tag &lt;dt&gt; para o <strong>termo</strong> e &lt;dd&gt; para a <strong>descrição</strong></p>
+    <p><strong>Exemplo:</strong></p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <pre><code>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de marcação para a criação do conteúdo de um site.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de marcação para a criação do design de um site.&lt;/dd&gt;
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de programação para a criação de interatividade de um site.&lt;/dd&gt;
+&lt;/dl&gt;
+    </code></pre>
+</body>
+</html>

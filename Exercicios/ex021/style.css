@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 3em;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.534);
+    width: 500px;
+    text-align: justify;
+    margin: auto;
+}
+
+.titulo {
+    background-color: lightgray;
+    height: 100px;
+    width: 500px;
+
+    border: 10px solid darkslategray;
+    /*
+    A ordem do border sempre será width style color
+    */
+
+    padding: 10px;
+    /*
+    O padding quando é configurado com 4 atributos, ele é configurado com Top, Right, Bottom e Left. 
+    EX.: padding: 10px 15px 12px 20px;
+
+    Quando ele constar 2 atributos, ele é configurado com atributo da esquerda para Top e Bottom, e o atributo da direita para Right e Left.
+    Ex.: padding: 10px 20px;
+
+    Quando constar apenas 1 atributo, o atributo é equivalente para todos os lados por igual.
+    Ex.: padding: 10px;
+    */
+
+    margin: 20px auto 40px auto;
+    /*
+    margin: 20px 20px 40px 20px;
+    margin: Top Right Bottom Left
+    */
+
+    outline: 5px dashed salmon;
+    /*
+    A ordem do outline sempre será width style color, assim como o border.
+    */
+}
+
+a.link {
+    border: 3px solid red;
+    padding: 1px;
+}

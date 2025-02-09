@@ -1,0 +1,4 @@
+git status
+git add .
+git commit -m "Mudança de abertura dos sites curso em video e módulo html 1"
+git push origin main

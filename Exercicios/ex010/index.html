@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+    
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Para adicionar um link externo ao texto, devemos usar a tag &lt;a&gt;, nele temos alguns atributos:</p> 
+    <ul>
+        <li><strong><em>href=""</em></strong>: Local entre as aspas onde alocamos o link de acesso à página ou a algum documento;</li>
+        <li><strong><em>target="_blank"</em></strong>: Especifica onde o documento vinculado deve ser aberto; e</li>
+        <li><strong><em>rel="external"</em></strong>: Define a relação entre o documento atual e o documento vinculado.</li>
+    </ul>
+    <p>Você pode utilizar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a> do professor Gustavo Guanabara</p>
+    <p>Assim como acessar o canal <a href="https://youtube.com/cursoemvideo/">Curso em Vídeo</a> no youtube.</p>
+    <p>Quando clicarmos nos nomes <ins><em>"repositório público no GitHub"</em></ins> e <ins><em>"Curso em Vídeo"</em></ins>, observe que eles tem comportamentos diferentes.</p>
+    <p>O link de <ins><em>"repositório público no GitHub"</em></ins> foi aberto em uma nova página, pois utilizamos os atributos target="_blank" e rel="external" dentro da tag &lt;a&gt;.</p>
+    <p>Já no link de <ins><em>"Curso em Vídeo"</em></ins> não foi utilizado os atributos citados anteriormente, por conta disso a nova página foi sobre posta a página atual.</p>
+    <h1>Usando links internos</h1>
+    <p></p>
+    <p>Esta é a primeira página do execício ex010, para acessar a segunda página <a href="pag002.html" target="_self" rel="next">clique aqui</a></p>
+    <h1>Usando links para downloads</h1>
+    <ul>
+        <li><a href="livro/HTML5_CSS3.pdf" download="HTML5_CSS3.pdf" type="aplication/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="noticias/ezgif.com-resize.webp" download="ezgif.com-resize.webp" type="image.webp">Patrocinador</a></li>
+        <p>Link util para encontrar o parâmetro correto do type="" correto é o <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a>.</p>
+    </ul>
+</body>
+</html>

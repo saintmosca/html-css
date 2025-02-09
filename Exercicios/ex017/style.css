@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    /* 
+    Safe Combination - https://www.w3schools.com/css/css_font_websafe.asp 
+    */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*
+    Medias Absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    tamanho original da fonte da página: 16px
+    1em = 16px
+    em e px são medidas oficiais, dando preferença para o uso do "em"
+    */
+
+    font-size: 1em ;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font: bold 200 2em 'Impact';
+}
+/*
+shorthand font: font-style font-weight font-size font-family
+
+Ex: font: italic bolder 3em 'Work Sans', sans-serif
+
+Ex: font: bold 2em 'Arial' serif
+*/

@@ -1,0 +1,28 @@
+@charset "UTF-08";
+
+* {
+    /* height: 100%; */
+    font-family: ubuntu;
+}
+body {
+    background-image: linear-gradient(to right, #D8B08C, #FFCB9A);
+}
+main {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -5px 5px 15px #695644b2;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1 {
+    color: #2C3532;
+    text-align: center;
+    text-shadow: 1px 1px 2px #1114137e;
+}
+h2 {
+    color: #0F6466
+}
+p {
+    text-align: justify;
+}
